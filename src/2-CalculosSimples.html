@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    let num1 = parseInt(prompt("Dame el valor 1", 0));
+    let num2 = parseInt(prompt("Dame el valor 2", 0));
+
+    let operacion = parseInt(
+      prompt(
+        "¿Qué operación quieres realizar?\n1.Suma\n2.Resta\n3.Multiplicación\n4.División\n5.Residuo\n6.Raíz",
+        0
+      )
+    );
+
+    let resultado = 0;
+    let raiz = false;
+
+    switch (operacion) {
+      case 1:
+        // Suma
+        resultado = num1 + num2;
+        break;
+      case 2:
+        // Resta
+        resultado = num1 - num2;
+        break;
+      case 3:
+        // Multiplicación
+        resultado = num1 * num2;
+        break;
+      case 4:
+        // División
+        resultado = num1 / num2;
+        break;
+      case 5:
+        // Residuo
+        resultado = num1 % num2;
+        break;
+      case 6:
+        // Raíz
+        raiz = true;
+        console.log("Raiz del número 1: ", Math.sqrt(num1));
+        console.log("Raiz del número 2: ", Math.sqrt(num2));
+        break;
+    }
+
+    if (raiz == false) {
+      console.log("Resultado: ", resultado);
+    }
+  </script>
+  <body></body>
+</html>

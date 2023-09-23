@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    let sueldo = parseInt(prompt("¿Cuál es tu sueldo al mes?"));
+
+    if (sueldo >= 50000) {
+      console.log("Eres rico");
+    } else if (sueldo < 50000 && sueldo >= 15000) {
+      console.log("Eres de clase media");
+    } else if (sueldo < 15000 && sueldo >= 5000) {
+      console.log("Eres de clase baja");
+    } else if (sueldo < 5000 && sueldo >= 2500) {
+      alert("Tu ere pobre, tu no tiene aifon");
+      console.log("Tu ere pobre, tu no tiene aifon");
+    } else if (sueldo < 2500) {
+      console.log("Pobreza extrema");
+    }
+  </script>
+  <body></body>
+</html>

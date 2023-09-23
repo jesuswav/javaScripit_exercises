@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    const nombres = [
+      "Jaime",
+      "Gabriel",
+      "Gabo",
+      "Fito",
+      "Liz",
+      "Kari",
+      "Alejandro",
+      "Wendy",
+      "Alan",
+      "Juan",
+    ];
+
+    let numero = 30;
+
+    do {
+      numero = parseInt(prompt("Ingresa un número del 1 al 10:"));
+    } while (!(numero <= 10 && numero >= 1));
+
+    alert(nombres[numero-1]);
+  </script>
+  <body></body>
+</html>

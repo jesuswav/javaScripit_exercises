@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    let a = parseInt(prompt("Inserta el valor de a:"));
+    let b = parseInt(prompt("Inserta el valor de b:"));
+    let c = parseInt(prompt("Inserta el valor de c:"));
+
+    let evaluar = (b*b - 4*a*c);
+    console.log(-b + Math.sqrt(evaluar));
+    console.log((2*a));
+
+    if (evaluar < 0) {
+      alert("No se puede solucionar");
+    } else {
+      let sol1 = (-b + Math.sqrt(evaluar))/(2*a);
+      let sol2 = (-b - Math.sqrt(evaluar))/(2*a);
+      alert(("Solución 1: " + sol1));
+      alert(("Solución 2: " + sol2));
+    }
+  </script>
+  <body></body>
+</html>
